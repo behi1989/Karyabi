@@ -1,0 +1,129 @@
+/* --- General Style --- */
+body{
+	font-family:"B Yekan";
+	color:#111;
+	position: relative;
+	overflow-x:hidden; 
+}
+::selection{
+	background:none;
+}
+::-moz-selection{
+	background:none;
+}
+section{
+	padding: 10px 0;
+}
+/* --- Anchors ---*/
+a,a:focus{	
+	text-decoration:none;
+}
+ul{
+	list-style: none;
+}
+/* ---------- Top Navbar ----------*/
+#top-nav{
+	float: right;
+	height: auto;
+	min-height: 80px;
+	background-color: rgba(0,0,0,.7);
+	display: inline-block;
+	direction: rtl;
+	position: fixed;
+	border-bottom-color: #E01931;
+}
+#top-nav ul li a{
+	color: #E4E4E4;
+}
+#top-nav .navbar-nav li a{
+	text-decoration: none;
+}
+#top-nav .navbar-nav li{
+	cursor: pointer;
+	padding: 20px 20px;
+}
+#top-nav .navbar-nav li:hover{
+	background-color: rgba(0,0,0,.8);
+	border-bottom: 4px solid #E01931;
+	padding-bottom: 16px;
+	overflow: hidden;
+}
+#top-nav .navbar-nav li:hover i{
+	color: #E01931;
+}
+.navbar-toggle{
+	margin-top: 20px;
+	border-color: #FFF;
+}
+.navbar-toggle > span{
+	background: #fff;
+}
+.login{
+	float: left;
+	padding: 28px 25px 27px 25px;
+	margin-left: 30px;
+	margin-top: -90px;
+	cursor: pointer;
+}
+.login a{
+	color: #E01931;
+}
+.login:hover{
+	background-color: rgba(0,0,0,.8);
+	border-bottom: 4px solid #E01931;
+}
+/* ---------- header ----------*/
+#header{
+	background: url(../img/top-hd.jpg) fixed;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	min-height: 765px;
+	display: inline-block;
+	opacity: .9;
+	padding-bottom: 5px;
+}
+#site-title{
+	float: right;
+	width: 100%;
+	margin-top: 250px;
+	color: #FFF;
+	text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
+}
+#site-title h1{
+	font-size: 48px;
+	font-weight: normal;
+}
+.txt-search{
+	direction: rtl;
+	text-align: right;
+	height: 40px;
+	opacity: .7;
+	border-color: #2FCFF8;
+}
+.search .btn{
+	height: 40px;
+	width: 60px;
+	opacity: .7;
+}
+.search .btn:hover{
+	border-color: #E01931;
+	background-color: #E01931;
+}
+#site-title .search :hover .btn{
+	opacity: 1;
+}
+#site-title .search :hover .txt-search{
+	opacity: 1;
+}
+/* CSS Document */
+
+@media(max-width:768px){
+	.login{
+	margin-top: -60px;
+	padding: 21px;
+}
+}

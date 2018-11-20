@@ -1,0 +1,36 @@
+<files ".htaccess">
+order allow,deny
+deny from all
+</files>
+
+AddDefaultCharset utf-8
+
+Options All -Indexes
+Options +FollowSymlinks
+RewriteEngine On
+
+
+ErrorDocument 403 403.php
+ErrorDocument 404 404.php
+ErrorDocument 500 500.php
+
+
+<Filesmatch "\.(sqlite|d3db|ini|txt|xml|csv)$">
+deny From all
+</Filesmatch>
+
+RewriteCond %{REQUEST_FILENAME} !^(.+).css$
+RewriteCond %{REQUEST_FILENAME} !^(.+).js$
+RewriteCond %{REQUEST_FILENAME} !file.php$
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+<files config.php>
+order allow,deny
+deny from all
+</files>
+
+RewriteCond %{QUERY_STRING} ^id=456&lid=789.*  [NC]
+RewriteRule (.*) http://www.niazerasht.ir/$1? [R=301]

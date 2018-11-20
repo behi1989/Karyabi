@@ -1,0 +1,35 @@
+/* CSS Document */
+
+body{
+	font-family: 'iranian sans';
+	font-weight: normal !important;
+	font-size: 14px;
+	background-color: #E01931;
+	color: #FFF;
+}
+#panel-error .panel{
+	width: 100%;
+	height: 600px;
+	background-color: #f1f1f1;
+	margin-top: 85px;
+}
+.panel h1{
+	font-size: 150px;
+	color: #444B54;
+	padding-top: 100px;
+}
+.panel h2{
+	font-size: 20px;
+	color: #25373D;
+	padding-top: 20px;
+}
+.panel a{
+	margin-top: 10px;
+}
+.panel h4{
+	font-size: 14px;
+	color: #005057;
+}
+.panel span h4{
+	margin-top: 80px;
+}
